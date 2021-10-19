@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="198dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bgbtnnew"
+                    android:text="exit"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ff3d3d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/titlepage"
+                    android:layout_marginTop="20dp"
+                    android:textSize="28sp"
+                    android:textColor="#FFF"
+                    android:text="To Do List App"
+                    android:layout_marginRight="60dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/subtitlepage"
+                android:textSize="18sp"
+                android:textColor="#4A4E6A"
+                android:text="Finish Them Quickly Today"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:background="#131E69"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_task"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/endpage"
+        android:textSize="16sp"
+        android:textColor="#9A9A9A"
+        android:layout_marginTop="30dp"
+        android:text="No More Does"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddNew"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bgbtnnew"
+            android:text="+"
+            android:textColor="#FFF"
+            android:textSize="38sp" />
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="bottom">-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnLogout"-->
+<!--            android:layout_width="52dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/bgbtnnew"-->
+<!--            android:text="+"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:textSize="38sp" />-->
+
+<!--        <Space-->
+<!--            android:layout_width="193dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnAddNew"-->
+<!--            android:layout_width="52dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/bgbtnnew"-->
+<!--            android:text="+"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:textSize="38sp" />-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>
